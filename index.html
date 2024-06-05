@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FONT AWESOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- TITLE -->
+  <title>Car Rental</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container container">
+      <div class="site-logo-wrapper">
+        <img class="site-logo" src="./img/logo.svg" alt="" />
+      </div>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <p class="nav-text">Categories</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <select name="about-us" id="about-us">
+              <option selected value="About Us">About Us</option>
+              <option value="news">News</option>
+              <option value="careers">Careers</option>
+              <option value="locations">Locations</option>
+            </select>
+          </li>
+          <li class="nav-item">
+            <select name="help-center" id="help-center">
+              <option selected value="About Us">Help center</option>
+              <option value="faq">FAQ</option>
+              <option value="contact">Contact us</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar-end">
+        <p class="navbar-end-phone-number">+1 855 420 0000</p>
+        <div>
+          <button class="logo-theme-toggler-wrapper__theme-toggler theme-toggler" id="themeToggler">
+            <span class="theme-toggler__inner"></span>
+          </button>
+        </div>
+        <button class="login-btn" id="login-btn">
+          Login
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+      </div>
+      <div class="bars" id="bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="sidebar hidden" id="sidebar">
+        <div class="sidebar-top">
+          <img src="./img/logo.svg" alt="" />
+          <i class="fa-solid fa-xmark" id="close-btn"></i>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <a href="" class="sidebar-link"> Categories </a>
+            </li>
+            <li class="sidebar-item">
+              <p>About Us</p>
+              <ul class="about-list">
+                <li class="about-item">
+                  <a href="" class="about-link"> News </a>
+                </li>
+                <li class="about-item">
+                  <a href="" class="about-link"> Careers </a>
+                </li>
+                <li class="about-item">
+                  <a href="" class="about-link"> Locations </a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <p>Help Center</p>
+              <ul class="help-list">
+                <li class="help-item">
+                  <a href="" class="help-link"> FAQ </a>
+                </li>
+                <li class="help-item">
+                  <a href="" class="help-link"> Contact us </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-end">
+          <p class="navbar-end-phone-number">+1 855 420 0000</p>
+          <div>
+            <button class="logo-theme-toggler-wrapper__theme-toggler theme-toggler" id="themeTogglerNav">
+              <span class="theme-toggler__inner"></span>
+            </button>
+          </div>
+          <button class="login-btn" id="login-btn-sidebar">
+            Login
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="compact-cars active" id="compact-cars">
+          <div class="hero-text-wrapper">
+            <h1 class="hero-title">Compact cars</h1>
+            <p class="hero-description">
+              Rent cars as you are comfortable and where you are comfortable.
+            </p>
+          </div>
+          <div class="hero-bottom">
+            <div class="hero-bottom-left">
+              <div class="hero-bottom-left-1">
+                <img src="./img/straight-line.svg" alt="" />
+              </div>
+              <div class="hero-bottom-left-2">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <div class="hero-bottom-left-3">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+            </div>
+            <div class="hero-bottom-right">
+              <div class="circle-left" id="compact-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="circle-right" id="compact-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SPORTS CARS -->
+        <div class="sports-cars hidden" id="sports-cars">
+          <div class="hero-text-wrapper">
+            <h1 class="hero-title">Sports cars</h1>
+            <p class="hero-description">
+              Rent cars as you are comfortable and where you are comfortable.
+            </p>
+          </div>
+          <div class="hero-bottom">
+            <div class="hero-bottom-left">
+              <div class="hero-bottom-left-1">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <div class="hero-bottom-left-2">
+                <img src="./img/straight-line.svg" alt="" />
+              </div>
+              <div class="hero-bottom-left-3">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+            </div>
+            <div class="hero-bottom-right" id="sports-prev">
+              <div class="circle-left">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="circle-right" id="sports-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- VANS -->
+        <div class="vans hidden" id="vans">
+          <div class="hero-text-wrapper">
+            <h1 class="hero-title">Vans</h1>
+            <p class="hero-description">
+              Rent cars as you are comfortable and where you are comfortable.
+            </p>
+          </div>
+          <div class="hero-bottom">
+            <div class="hero-bottom-left">
+              <div class="hero-bottom-left-1">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <div class="hero-bottom-left-2">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <div class="hero-bottom-left-3">
+                <img src="./img/straight-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="hero-bottom-right">
+              <div class="circle-left" id="vans-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="circle-right" id="vans-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search">
+      <div class="search-container container">
+        <div class="search-input-wrapper">
+          <input type="text" placeholder="Find the car of your dreams" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="search-text-wrapper">
+          <h1 class="search-title">Choose the car of your dreams</h1>
+          <p class="search-description">
+            We provide our customers with the most incredible driving
+            emotions. That is why there are only world-class cars in our fleet
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cars">
+      <div class="cars-container container">
+        <div class="cars-top">
+          <button class="cart-top-btn cart-top-btn-selected" id="compact-btn">Compact</button>
+          <button class="cart-top-btn" id="sports-btn">Sports cars</button>
+          <button class="cart-top-btn" id="vans-btn">Vans</button>
+        </div>
+        <!-- COMPACT -->
+        <div class="1-info" id="compact-info">
+          <div class="cars-info-wrapper-compact">
+            <div class="cars-info">
+              <h2 class="cars-info-title">Ford Fiesta</h2>
+              <p class="cars-info-description">Economy Car</p>
+              <img src="./img/ford-fiesta.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Nissan Versa</h2>
+              <p class="cars-info-description">Compact Car</p>
+              <img src="./img/nissan-versa.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Toyota Corolla</h2>
+              <p class="cars-info-description">Mid-size Car</p>
+              <img src="./img/toyota-carolla.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Nissan Rogue</h2>
+              <p class="cars-info-description">Mid-size SUV</p>
+              <img src="./img/nissan-rogue.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Chevy Traverse</h2>
+              <p class="cars-info-description">Full-size SUV</p>
+              <img src="./img/chevy-traverse.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Nissan Altima</h2>
+              <p class="cars-info-description">Full-size Car</p>
+              <img src="./img/nissan-altima.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SPORTS CAR -->
+        <div class="2-info hidden" id="sports-info">
+          <div class="cars-info-wrapper-sports">
+            <div class="cars-info">
+              <h2 class="cars-info-title">Royce rolls ghost</h2>
+              <p class="cars-info-description">Full-size Car</p>
+              <img src="./img/royce-rolls.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Mercedes s class</h2>
+              <p class="cars-info-description">Full-size Car</p>
+              <img src="./img/nercedes-s-class.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Lamborghini urus</h2>
+              <p class="cars-info-description">Mid-size Car</p>
+              <img src="./img/lamborghini-urus.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Mercedes g63 amg</h2>
+              <p class="cars-info-description">Mid-size SUV</p>
+              <img src="./img/mercedes-g63-amg.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- VANS -->
+        <div class="3-info hidden" id="vans-info">
+          <div class="cars-info-wrapper-vans">
+            <div class="cars-info">
+              <h2 class="cars-info-title">15-Passenger Ford Transit </h2>
+              <p class="cars-info-description">Full-size Car</p>
+              <img src="./img/15-passenger-ford-transit.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Chrysler Pacifica</h2>
+              <p class="cars-info-description">Full-size Car</p>
+              <img src="./img/chrysler-pacifica.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Chevy Silverado 4500HD</h2>
+              <p class="cars-info-description">Mid-size Car</p>
+              <img src="./img/chevy-silverado.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">12-Passenger Ford Transit</h2>
+              <p class="cars-info-description">Mid-size SUV</p>
+              <img src="./img/12-passenger-ford-transit.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">15-Passenger Ford Transit </h2>
+              <p class="cars-info-description">Mid-size SUV</p>
+              <img src="./img/15-passenger-ford.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cars-info">
+              <h2 class="cars-info-title">Mercedes-Benz Sprinter</h2>
+              <p class="cars-info-description">Mid-size SUV</p>
+              <img src="./img/mercedes-benz-spinter.png" alt="" />
+              <div class="cars-info-about-wrapper">
+                <div class="cars-info-about-left">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="cars-info-about-title">5 Seats</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-file"></i>
+                    <p class="cars-info-about-title">21+ Years</p>
+                  </div>
+                </div>
+                <div class="cars-info-about-right">
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="cars-info-about-title">Automatic</p>
+                  </div>
+                  <div class="cars-info-about-left-wrapper">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="cars-info-about-title">1-lit / 2.5 km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-all-cars-btn-wrapper">
+          <button class="view-all-cars-btn" id="view-all-cars-btn">
+            View all cars
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="community">
+      <div class="community-container container">
+        <div class="community-left">
+          <div class="community-left-top">
+            <img src="./img/google-icon.svg" alt="">
+            <p class="community-left-top-text">From Google</p>
+          </div>
+          <div class="community-left-content">
+            <h2 class="community-left-title">
+              Hear what the community is saying
+            </h2>
+            <div class="community-left-line"></div>
+            <p class="community-left-decription">
+              More interesting reviews on Instagram
+            </p>
+            <button class="insta-btn">
+              Instagram
+            </button>
+          </div>
+        </div>
+        <div class="community-right">
+          <div class="community-comment-wrapper">
+            <div class="community-comment">
+              <div class="community-comment-top">
+                <div class="community-comment-top-left">
+                  <img src="./img/savannah.png" alt="">
+                  <div class="community-comment-top-left-user-adress">
+                    <h3 class="community-comment-top-left-user-name">Savannah Nguyen</h3>
+                    <p class="community-comment-top-left-user-email">savannahnguyen@gmail.com</p>
+                  </div>
+                </div>
+                <img src="./img/google-icon.svg" alt="">
+              </div>
+              <div class="community-comment-content">
+                <p class="community-comment-content-description">
+                  Sagittis sed tortor, elementum vitae varius sodales consectetur. Vitae arcu ut morbi bibendum
+                  ullamcorper feugiat. Venenatis hendrerit cursus egestas sit ornare nunc vulputate aliquam sapien.
+                  Pulvinar nunc consectetur nibh consectetur mollis mauris est mauris amet. Sed hac vehicula id et dui
+                  morbi quam pulvinar condimentum. Senectus sed varius interdum nunc, arcu vulputate massa.
+                </p>
+              </div>
+              <div class="community-comment-bottom">
+                <span class="community-comment-bottom-text">Star rating:</span>
+                <div class="community-comment-bottom-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="community-comment">
+              <div class="community-comment-top">
+                <div class="community-comment-top-left">
+                  <img src="./img/ronald.png" alt="">
+                  <div class="community-comment-top-left-user-adress">
+                    <h3 class="community-comment-top-left-user-name">Ronald Richards</h3>
+                    <p class="community-comment-top-left-user-email">ronaldrichards@gmail.com</p>
+                  </div>
+                </div>
+                <img src="./img/google-icon.svg" alt="">
+              </div>
+              <div class="community-comment-content community-comment-content-2">
+                <p class="community-comment-content-description">
+                  Placerat pulvinar in amet sem id gravida nisi leo. A dignissim est pellentesque mi quisque vel mi ut.
+                  Porttitor blandit auctor odio a ornare felis tortor bibendum molestie.
+                </p>
+              </div>
+              <div class="community-comment-bottom">
+                <span class="community-comment-bottom-text">Star rating:</span>
+                <div class="community-comment-bottom-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="community-comment">
+              <div class="community-comment-top">
+                <div class="community-comment-top-left">
+                  <img src="./img/kristin.png" alt="">
+                  <div class="community-comment-top-left-user-adress">
+                    <h3 class="community-comment-top-left-user-name">Kristin Watson</h3>
+                    <p class="community-comment-top-left-user-email">kristinwatson@gmail.com</p>
+                  </div>
+                </div>
+                <img src="./img/google-icon.svg" alt="">
+              </div>
+              <div class="community-comment-content community-comment-content-3">
+                <p class="community-comment-content-description">
+                  Id adipiscing vulputate arcu pretium dignissim. Felis vulputate tellus velit consectetur. Congue
+                  convallis aliquam eget ullamcorper quam pellentesque cursus. Dictumst mauris ac, quis orci morbi
+                  ultrices faucibus volutpat mauris. Bibendum sed ut lectus facilisi amet orci. Interdum massa orci urna
+                  id ac cras arcu.
+                </p>
+              </div>
+              <div class="community-comment-bottom">
+                <span class="community-comment-bottom-text">Star rating:</span>
+                <div class="community-comment-bottom-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="community-right-bottom">
+            <div class="community-right-bottom-line"></div>
+            <div class="community-right-bottom-towards">
+              <i class="fa-solid fa-angle-left"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="brands-container container">
+        <h4 class="brands-title">More than 50 brands of cars</h4>
+        <div class="brands-logo-wrapper">
+          <div class="brands-logo-left">
+            <div class="fird"></div>
+            <div class="nissan"></div>
+            <div class="Toyota"></div>
+          </div>
+          <div class="brands-logo-right">
+            <div class="dodge"></div>
+            <div class="hyundai"></div>
+            <div class="jeep"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services-container container">
+        <div class="services-top">
+          <h3 class="services-title">
+            Unparalleled service
+          </h3>
+          <p class="services-description">
+            Whether you are looking for Newark Airport car rental, an insurance replacement vehicle or minivan to take
+            on vacation Car rental has it all.
+          </p>
+        </div>
+        <div class="services-content">
+          <div class="services-types">
+            <div class="services-types-text-wrapper">
+              <h3 class="services-types-text-title">
+                Book online, <br> pay online
+              </h3>
+              <p class="services-types-text">
+                Complete the booking process A-Z, with our easy online system
+              </p>
+            </div>
+            <div class="services-types-icon-wrapper">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+          </div>
+          <div class="services-types">
+            <div class="services-types-text-wrapper">
+              <h3 class="services-types-text-title">
+                Guaranteed car <br> reservation
+              </h3>
+              <p class="services-types-text">
+                When you book with Car rental, you can be confident your car will be waiting for you
+              </p>
+            </div>
+            <div class="services-types-icon-wrapper">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+          </div>
+          <div class="services-types">
+            <div class="services-types-text-wrapper">
+              <h3 class="services-types-text-title">
+                Unparalleled <br> customer service
+              </h3>
+              <p class="services-types-text">
+                We're here to help. We pride ourselves in our customer service
+              </p>
+            </div>
+            <div class="services-types-icon-wrapper">
+              <i class="fa-solid fa-user-clock"></i>
+            </div>
+          </div>
+          <div class="services-types">
+            <div class="services-types-text-wrapper">
+              <h3 class="services-types-text-title">
+                No reservation or <br> booking fees
+              </h3>
+              <p class="services-types-text">
+                No cancellation fees if cancelled 24 hours prior to booking time
+              </p>
+            </div>
+            <div class="services-types-icon-wrapper">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info-container container">
+        <div class="info-left">
+          <div class="info-left-text-wrapper">
+            <h2 class="info-title">
+              Car rental keeps you safe
+            </h2>
+            <p class="info-description">
+              The safety of our employees and renters is our number one priority. In addition to being confident your vehicle is cleaned and sanitized every time you rent, you can also feel confident that we will take every opportunity to enhance the health and safety measures currently practiced in our operations.
+            </p>
+          </div>
+          <div class="info-card-wrapper">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-flask"></i>
+              </div>
+              <p class="info-card-text">
+                Every car is thoroughly sanitized and cleaned
+              </p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <p class="info-card-text">
+                All of our employees wear masks
+              </p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-folder"></i>
+              </div>
+              <p class="info-card-text">
+                We stay up to date with all protocol from the CDC
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="info-right">
+          <div class="info-right-img">
+            <img class="info-right-img-img" src="./img/hero-bottom.png" alt="">
+          </div>
+          <div class="info-right-circle"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-left">
+        <div class="footer-left-text-wrapper">
+          <img src="./img/logo.svg" alt="">
+          <p class="footer-left-text">
+            Car rental offers a wide range of cars available for rent in Newark EWR Airport NJ. We pride ourselves in our customer service, and hassle-free renting experience.
+          </p>
+        </div>
+        <div class="footer-terms">
+          <p class="footer-terms-text">
+            © 2022 Car rental Terms & Conditions
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-right-top">
+          <ul class="footer-right-top-list">
+            <p class="footer-right-top-list-title">
+              <strong>Main</strong>
+            </p>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                My Bookings
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                Reservation
+              </p>
+            </li>
+          </ul>
+          <ul class="footer-right-top-list">
+            <p class="footer-right-top-list-title">
+              <strong>Categories</strong>
+            </p>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                Compact
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                Sports cars
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                Vans
+              </p>
+            </li>
+          </ul>
+          <ul class="footer-right-top-list">
+            <p class="footer-right-top-list-title">
+              <strong>Company</strong>
+            </p>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                About us
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                Careers
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                News
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                Contact us
+              </p>
+            </li>
+          </ul>
+          <ul class="footer-right-top-list">
+            <p class="footer-right-top-list-title">
+              <strong>Our Locations</strong>
+            </p>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                2118 Thornridge Cir. Syracuse
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                4140 Parker Rd. Allentown
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                4517 Washington Ave.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right-bottom">
+          <ul class="footer-right-top-list">
+            <p class="footer-right-top-list-title">
+              <strong>Contact</strong>
+            </p>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                +1 855 420 0000
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                carrental@gmail.com
+              </p>
+            </li>
+          </ul>
+          <ul class="footer-right-top-list">
+            <p class="footer-right-top-list-title">
+              <strong>Hours of operation</strong>
+            </p>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                8:00 - 21:00 Mon-Sat 
+              </p>
+            </li>
+            <li class="footer-right-top-item">
+              <p class="footer-right-top-item-text">
+                9:00 - 15:00 Sundays
+              </p>
+            </li>
+          </ul>
+          <ul class="footer-social-network-list">
+            <p class="footer-social-network-text">
+              <strong>Social network</strong>
+            </p>
+            <div class="footer-social-network-list-wrapper">
+              <li class="footer-social-network-item">
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li class="footer-social-network-item">
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li class="footer-social-network-item">
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li class="footer-social-network-item">
+                <i class="fa-brands fa-whatsapp"></i>
+              </li>
+            </div>
+          </ul>
+          <a href="#">
+            <button class="up-btn">
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div class="login hidden" id="login">
+    <div class="login-container container">
+      <div class="login-top">
+        <div class="login-text-wrapper">
+          <h2 class="login-title">Login</h2>
+          <p class="login-description">Use the email and password that you login</p>
+        </div>
+        <div id="login-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="login-content">
+        <div class="login-input-wrapper">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <label>Forgot password</label>
+        </div>
+        <p class="login-btn-text">I want to create an account</p>
+        <button class="login-btn-in-login">
+          Login 
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="overlay hidden" id="overlay"></div>
+  <!-- loader -->
+  <div class="loader-wrapper" id="loader">
+    <span class="loader"></span>
+  </div>
+
+  <!-- js -->
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
